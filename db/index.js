@@ -1,4 +1,5 @@
 const Sequelize = require('sequelize');
+const pg = require('pg')
 const { DB } = require('../config')
 
 const sequelize = new Sequelize(
@@ -6,7 +7,10 @@ const sequelize = new Sequelize(
 	DB.USER,
 	DB.PASSWORD,
 	DB.HOST,
-	{ logging: console.log }
+	{
+		logging: console.log,
+		dialectModule: pg
+	}
 );
 
 sequelize.authenticate()
