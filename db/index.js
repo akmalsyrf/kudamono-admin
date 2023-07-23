@@ -5,7 +5,8 @@ const sequelize = new Sequelize(
 	DB.NAME,
 	DB.USER,
 	DB.PASSWORD,
-	DB.HOST
+	DB.HOST,
+	{ logging: console.log }
 );
 
 sequelize.authenticate()

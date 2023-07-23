@@ -18,12 +18,8 @@ conf.sequelize.dialectOptions = {
     collate: 'utf8mb4_unicode_ci'
 };
 
-if(process.env.DB_SSL){
-    conf.sequelize.dialectOptions.ssl = {
-        require: true,
-        rejectUnauthorized: true,
-        ca: [process.env.DB_SSL]
-    }
+conf.sequelize.dialectOptions.ssl = {
+    require: true
 }
 conf.ROUND_SALT = 8;
 
