@@ -15,10 +15,10 @@ module.exports = (sequelize, DataTypes) => {
   }
   m_hotel.init({
     name: DataTypes.STRING,
-    city_id: DataTypes.INTEGER,
+    cityId: DataTypes.INTEGER,
     address: DataTypes.TEXT,
-    star_amount: DataTypes.INTEGER,
-    picture_url: DataTypes.STRING
+    starAmount: DataTypes.INTEGER,
+    pictureUrl: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'm_hotel',

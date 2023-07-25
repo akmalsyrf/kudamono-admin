@@ -12,7 +12,13 @@ module.exports = {
       name: {
         type: Sequelize.STRING
       },
+      cityId: {
+        type: Sequelize.INTEGER
+      },
       address: {
+        type: Sequelize.TEXT
+      },
+      starAmount: {
         type: Sequelize.TEXT
       },
       createdAt: {
