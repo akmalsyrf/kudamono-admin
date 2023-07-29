@@ -20,11 +20,6 @@ import { Search } from "@/components/dashboard/search"
 import TeamSwitcher from "@/components/dashboard/team-switcher"
 import { UserNav } from "@/components/dashboard/user-nav"
 
-export const metadata = {
-  title: "Dashboard",
-  description: "Example dashboard app using the components.",
-}
-
 export default function Home() {
   return (
     <div className="hidden flex-col md:flex">

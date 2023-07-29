@@ -1,3 +1,5 @@
+export const KUDAMONO_AUTH_SECRET = 'kudamono_auth_secret'
+
 export const TRANSACTION_STATUS = {
     BOOK: 1,
     DONE: 2
